@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-frYszA/Qv3fltsSCyb+m097RZeSiMIn1RxR0oREW734='; style-src 'unsafe-inline'; img-src blob: data:; connect-src 'none'; font-src 'none'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>贝利亚粉丝团专用</title><meta name="description" content="在浏览器本地加密图片。选择图片、设置密码、保存加密文件；无需上传，支持离线使用。"><link rel="icon" href="data:,"><style>:root{font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:#253b37;background:#f4f5f0;font-synthesis:none;font-size:15px;--green:#205b49;--line:#dce2da;--muted:#68776e}*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button,a,input,select{touch-action:manipulation}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.5}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #8bac7c;outline-offset:4px}[hidden]{display:none!important}.top{max-width:1200px;margin:auto;padding:26px 36px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px}.brandmark{background:var(--green);color:#fff;display:grid;place-items:center;width:36px;height:36px;border-radius:10px;font-size:18px}.brand strong{font-size:20px;letter-spacing:2px}.brand-en{font-size:10px;letter-spacing:2px;color:var(--muted);padding-left:10px;border-left:1px solid #cbd4c9}.quiet{background:none;border:0;color:var(--green);padding:10px;font-size:13px}.quiet span{margin-left:9px}main{max-width:1130px;padding:0 28px;margin:auto}.intro{padding:36px 0 31px}.eyebrow{font-size:12px;color:var(--green);display:flex;align-items:center;gap:8px;letter-spacing:1px}.dot{width:7px;height:7px;background:#669653;display:inline-block;border-radius:50%;flex-shrink:0}h1{font-size:clamp(31px,4.2vw,48px);line-height:1.2;font-weight:650;letter-spacing:-1.5px;margin:17px 0 13px}.intro p{margin:0;color:var(--muted);font-size:15px;line-height:1.8}.mobile-break{display:none}.workspace{display:grid;grid-template-columns:1.16fr 1fr;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 14px 40px #203c2a06}.left{padding:28px 34px 22px}.tabs{display:flex;background:#f0f3ed;padding:4px;border-radius:11px;gap:4px;margin-bottom:29px}.tabs button{border:0;background:none;color:var(--muted);width:50%;border-radius:8px;padding:11px;font-size:14px}.tabs button.active{background:#fff;color:var(--green);font-weight:650;box-shadow:0 2px 6px #1f3a2510}.step{display:flex;align-items:center;gap:10px;margin:22px 0 12px;font-size:14px}.step span{font-family:monospace;font-size:11px;color:#84927f}.step strong{font-weight:600}.dropzone{position:relative;min-height:132px;background:#fafbf8;border:1px dashed #b8c9b0;border-radius:12px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:15px;gap:5px;transition:background .15s}.dropzone.over{background:#e8f0e1;border-color:#205b49}.dropzone input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}.dropzone:focus-within{outline:3px solid #8bac7c;outline-offset:3px}.dropzone strong{font-size:13px;font-weight:550;overflow-wrap:anywhere;max-width:100%;pointer-events:none}.dropzone span{font-size:11px;color:#74826b;pointer-events:none}.upload-symbol{font-size:27px;color:#71935e;line-height:1.1;pointer-events:none}.password-row{position:relative}input:not([type=checkbox],[type=file]),select{width:100%;border:1px solid #dce3d7;border-radius:9px;padding:12px 14px;background:#fff;color:#253b37;font-size:13px;min-width:0}input::placeholder{color:#869081}#password{padding-right:63px}.inside{position:absolute;right:7px;top:6px;padding:7px 10px;border:0;background:transparent;color:var(--green);font-size:12px}.password-actions{display:flex;align-items:center;justify-content:space-between;margin:8px 0 15px;gap:8px;flex-wrap:wrap}.password-actions>span{font-size:10px;color:var(--muted)}.text-button{border:0;background:transparent;color:var(--green);padding:4px;font-size:12px}.password-actions>div{display:flex;gap:8px}.small-label{display:block;font-size:12px;margin:13px 0 7px;color:#5e6d61}.format-help{font-size:11px;line-height:1.7;color:var(--muted);margin:9px 0 15px}.check{display:flex;gap:8px;align-items:flex-start;font-size:11px;color:#56664d;line-height:1.6;margin:17px 0}.check input{margin:2px 0 0;accent-color:var(--green);width:14px;height:14px}.primary{width:100%;display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--green);border:1px solid var(--green);color:#fff;border-radius:10px;font-size:14px;font-weight:550;transition:background .15s}.primary:hover{background:#174735}.primary span{font-size:18px}#status{min-height:20px;font-size:11px;color:var(--muted);margin:11px 0 0;line-height:1.7;overflow-wrap:anywhere}#status.error{color:#a3392e}#status.success{color:#205b49}.right{background:#f7f8f3;border-left:1px solid var(--line);padding:28px 30px;display:flex;flex-direction:column;min-width:0}.preview-heading{display:flex;align-items:center;justify-content:space-between;color:#788273;font-size:11px;letter-spacing:.5px}.preview{min-height:330px;flex:1;display:flex;justify-content:center;align-items:center;text-align:center;overflow:hidden;padding:15px 0}.preview img{max-width:100%;max-height:400px;object-fit:contain;border-radius:8px}.preview h2{font-size:25px;line-height:1.55;font-weight:550;letter-spacing:-.6px;margin:0 0 14px}.preview p{font-size:12px;color:#7b8674;line-height:1.8}.art{position:relative;width:175px;height:155px;margin:22px auto 21px}.art-back,.art-front{position:absolute;width:111px;height:134px;border-radius:12px}.art-back{background:#d6dfcd;left:14px;top:0;transform:rotate(-13deg);border:1px solid #bfceb7}.art-front{left:48px;top:13px;transform:rotate(8deg);border:1px solid #a9bea0;background:repeating-linear-gradient(45deg,#e5ebde 0,#e5ebde 3px,#dbe4d4 3px,#dbe4d4 5px);display:grid;place-items:center}.art-front span{background:#fff9;padding:8px 12px;border:1px solid #bfceb7;border-radius:7px;letter-spacing:5px;font-size:19px;color:#587846}.local-note{border-top:1px solid #dfe5d8;padding-top:20px;display:flex;gap:12px;align-items:flex-start;margin-top:20px}.local-line{width:7px;height:22px;background:#bfd1ad;border-radius:4px;margin-top:3px}.local-note strong{font-size:12px;font-weight:600}.local-note p{font-size:11px;color:#76816e;line-height:1.8;margin:6px 0 0}.sealed-mark{font-size:27px;letter-spacing:3px;width:80px;height:95px;background:#e0e9d8;border:1px solid #c2d1b6;border-radius:13px;display:grid;place-items:center;color:#4d6d3c;margin:10px auto 22px}.result-title{display:flex;align-items:center;gap:8px;font-size:13px}#result-detail,#result-tip{font-size:11px;color:var(--muted);line-height:1.7;overflow-wrap:anywhere}#result{border-top:1px solid #dfe5d8;padding-top:18px}#result-tip{margin-bottom:0}.footnotes{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;padding:30px 3px 25px}.note-number{font-size:11px;letter-spacing:1px;color:#738666}.footnotes p{font-size:12px;color:#73806d;line-height:1.85;margin:9px 0 0}.footnotes b{font-weight:600;color:#4b6043}.details{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:15px 0;font-size:12px;color:#63745a}.details summary{cursor:pointer}.details div{max-width:850px;line-height:1.85;font-size:12px;padding-top:6px}footer{display:flex;justify-content:space-between;gap:12px;padding:23px 0 32px;color:#88917f;font-size:10px}footer .muted{margin:0 7px;color:#b6bfae}@media(max-width:720px){.top{padding:20px}.brand-en{display:none}main{padding:0 18px}.intro{padding:26px 3px 25px}h1{font-size:34px}.mobile-break{display:block}.workspace{grid-template-columns:1fr;border-radius:17px}.left{padding:22px}.right{border-left:0;border-top:1px solid var(--line);padding:22px}.preview{min-height:220px}.preview img{max-height:300px}.preview h2{font-size:22px}.art{height:130px;margin:14px auto 16px;transform:scale(.8)}.footnotes{grid-template-columns:1fr;gap:17px;padding:25px 3px}.footnotes p{margin-top:5px}.primary{min-height:48px}.quiet{font-size:12px}footer{font-size:10px}.intro p{font-size:13px}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+@media(max-width:720px){.brand strong{font-size:15px;letter-spacing:0}.brand{gap:8px}.brandmark{width:30px;height:30px;flex-shrink:0}.quiet{white-space:nowrap;padding:8px 0 8px 8px}}
+
+.save-options{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}.save-notice{border:1px solid #cbd8be;background:#eef3e8;border-radius:12px;padding:13px 17px;font-size:12px;line-height:1.8;margin:12px 0}.save-notice p{margin:4px 0}.save-notice .text-button{display:inline-block;margin-right:14px}#save-message{font-size:12px;color:#4b6043;line-height:1.8;overflow-wrap:anywhere}
+</style></head>
+<body>
+<header class="top"><a class="brand" href="#" aria-label="贝利亚粉丝团专用首页"><span class="brandmark">藏</span><strong>贝利亚粉丝团专用</strong></a><button id="offline" class="quiet">下载离线版 <span aria-hidden="true">↗</span></button></header>
+<main>
+<div id="browser-help" class="save-notice" hidden>当前在微信内打开，下载可能受限。请点右上角菜单，选择“在浏览器打开”，再选择文件加密或解密。</div>
+<div id="offline-help" class="save-notice" hidden><p id="offline-message" role="status" aria-live="polite"></p><button id="offline-save-as" class="text-button" type="button">另存为离线版</button><a id="offline-direct" class="text-button" href="./offline.html" download="贝利亚粉丝团专用-离线版.html">直接下载离线文件</a><p>如果打开的是网页，请用浏览器菜单保存页面；不要截图保存。</p></div>
+<section class="intro"><div class="eyebrow"><span class="dot"></span>图片留在你的设备上</div><h1>贝利亚粉丝团专用</h1><p>选好图片，设好密码。<br class="mobile-break">只有拿到密码的人，才能打开内容。</p></section>
+<section class="workspace" aria-label="图片加密工具">
+<div class="left"><div class="tabs" role="tablist" aria-label="选择操作"><button id="encrypt-tab" role="tab" aria-selected="true" aria-controls="panel" class="active">加密图片</button><button id="decrypt-tab" role="tab" aria-selected="false" aria-controls="panel">解密图片</button></div>
+<div id="panel" role="tabpanel" aria-labelledby="encrypt-tab">
+<label class="step" for="file"><span>01</span><strong id="file-label">选择一张图片</strong></label>
+<div class="dropzone" id="dropzone"><input type="file" id="file" accept="image/*" aria-describedby="file-help"><div class="upload-symbol" aria-hidden="true">＋</div><strong id="file-name">点击选择，或拖放图片到这里</strong><span id="file-help">JPG、PNG、GIF、WebP 等 · 最大 20 MB</span><span id="file-size"></span></div>
+<label class="step" for="password"><span>02</span><strong id="password-label">设置解密密码</strong></label>
+<div class="password-row"><input id="password" type="password" placeholder="密码长度不限，建议生成强密码" autocomplete="new-password" spellcheck="false" autocapitalize="off"><button id="show-password" class="inside" type="button" aria-label="显示密码" aria-pressed="false">显示</button></div>
+<div id="encrypt-options"><div class="password-actions"><span id="password-hint">不要使用生日、手机号或常见短语</span><div><button id="generate" class="text-button">生成强密码</button><button id="copy" class="text-button" disabled>复制</button></div></div>
+<label class="small-label" for="confirm">再输入一次密码</label><input id="confirm" type="password" placeholder="确认密码，避免输错" autocomplete="new-password" spellcheck="false" autocapitalize="off">
+<label class="small-label" for="format">保存格式</label><select id="format"><option value="binary">加密文件 .ctvault（推荐）</option><option value="png">加密图片 .png（像素承载密文）</option></select><p class="format-help" id="format-help">体积接近原图。接收方打开本工具，选择“解密图片”即可恢复。</p>
+<label class="check"><input type="checkbox" id="saved-password"><span>我已妥善保存密码，知道忘记后无法找回。</span></label></div>
+<p id="decrypt-help" hidden class="format-help">需要加密时使用的完整密码，空格和大小写也必须一致。</p>
+<button class="primary" id="run">加密图片 <span aria-hidden="true">→</span></button><p id="status" role="status" aria-live="polite">准备好后，点击上方按钮。</p>
+</div></div>
+<aside class="right"><div class="preview-heading"><span id="preview-label">处理预览</span><button class="text-button" id="clear">清空本次内容</button></div><div class="preview" id="preview"><div id="empty-preview"><div class="art" aria-hidden="true"><div class="art-back"></div><div class="art-front"><span>••••</span></div></div><h2>看得见文件，<br>看不见内容。</h2><p>原始图片和文件名一起加密。<br>密码由你保管。</p></div><img id="preview-image" alt="本次选择或生成的图片预览" hidden><div id="file-preview" hidden><div class="sealed-mark">CT</div><h2 id="file-preview-title">加密文件</h2><p id="file-preview-caption">需要密码才能打开。</p></div></div>
+<div id="result" hidden><div class="result-title"><span class="dot"></span><strong id="result-title">已完成</strong></div><p id="result-detail"></p><a id="download" class="primary" download>保存结果 <span aria-hidden="true">↓</span></a><div class="save-options"><button id="save-as" class="text-button" type="button" hidden>另存为…</button><button id="share-file" class="text-button" type="button" hidden>系统保存 / 分享</button><a id="open-image" class="text-button" target="_blank" rel="noopener noreferrer" hidden>打开原始图片</a></div><p id="save-message" role="status" aria-live="polite"></p><p id="result-tip"></p></div>
+<div class="local-note"><span class="local-line"></span><div><strong>在你的浏览器中完成</strong><p>无需账号，不上传图片或密码。<br>关闭页面后，本工具不会保留本次内容。</p></div></div></aside>
+</section>
+<section class="footnotes"><div><span class="note-number">01 / 分享</span><p>把加密结果<b>按文件发送</b>。PNG 也不要截图、裁剪、压缩或转成 JPG；密码建议通过另一条渠道告知。</p></div><div><span class="note-number">02 / 恢复</span><p>正确解密后恢复原始文件，包括原尺寸、动图和文件内的元数据。请先试解密，再自行决定是否删除原图。</p></div><div><span class="note-number">03 / 边界</span><p>加密保护文件内容，不隐藏文件大小或加密事实，也不保证通过平台审核。本工具尚未经过独立安全审计。</p></div></section>
+<details class="details"><summary>加密方式、隐私与兼容性</summary><div><p>使用浏览器内置 Web Crypto：AES-256-GCM，128 位认证标签；PBKDF2-HMAC-SHA-256，600,000 次迭代；每次生成独立的 16 字节随机盐和 12 字节随机初始值。文件名及类型包含在加密内容中；格式头也经过认证。随机密码包含 20 个字符，由密码学随机数生成器产生。</p><p>加密图片是装有密文的无损 PNG，不是像素混淆或隐写。没有密码无法通过本工具恢复；弱密码仍可能被猜中。本工具与其他图片混淆程序不兼容。</p><p>应用没有图片上传、统计、远程字体或密码存储功能；联网打开网址时，托管服务仍会接收普通网页访问请求。较敏感的文件可下载离线版后断网处理。浏览器扩展、设备被入侵、恶意修改网页等情况不在此工具的保护范围内。</p><p>建议使用近期版本的 Chrome、Edge 或 Safari。手机上请用系统浏览器打开；微信内置浏览器可能限制下载。单张原图上限 20 MB，较大的图片在手机上可能处理较慢。保存离线版也有助于长期保留解密工具。</p></div></details>
+<footer><span>藏图 <span class="muted">/</span> v1.0</span><span>密码在你手中，图片也一样。</span></footer>
+</main><script>/* Cangtu v1. Cryptographic primitives are supplied by the browser Web Crypto API.
+   Container: magic[8], PBKDF2 iterations u32be, salt[16], IV[12], ciphertext length u32be,
+   AES-GCM ciphertext + 128-bit tag. The entire 44-byte header is authenticated as AAD.
+   Plaintext: metadata length u32be, UTF-8 JSON {name,type}, original file bytes.
+   PNG: consecutive RGB bytes of the same container; alpha is always 255, trailing RGB bytes zero.
+   Not compatible with the earlier pixel-shuffling website. No homemade cipher.
+*/
+const Vault = (() => {
+  'use strict';
+  const MAGIC = new TextEncoder().encode('CANGTU01');
+  const ITERATIONS = 600000, HEADER = 44, MAX = 20 * 1024 * 1024, MAX_CONTAINER = MAX + 4096;
+  const encoder = new TextEncoder(), decoder = new TextDecoder('utf-8', {fatal:true});
+  const eq = (a,b) => a.length === b.length && a.every((v,i)=>v===b[i]);
+  const isMagic = b => b.length >= 8 && eq(b.subarray(0,8), MAGIC);
+  const pngMagic = new Uint8Array([137,80,78,71,13,10,26,10]);
+  function join(...arrays) {const out=new Uint8Array(arrays.reduce((n,a)=>n+a.length,0));let at=0;for(const a of arrays){out.set(a,at);at+=a.length;}return out;}
+  function safeName(name) {return String(name||'恢复的图片').replace(/[<>:"/\\|?*\u0000-\u001f\u007f]/g,'_').slice(0,180).replace(/[. ]+$/g,'') || '恢复的图片';}
+  async function keyFor(password,salt,usage) {
+    const bytes=encoder.encode(password);
+    try {
+      const material=await crypto.subtle.importKey('raw',bytes,'PBKDF2',false,['deriveKey']);
+      return await crypto.subtle.deriveKey({name:'PBKDF2',salt,iterations:ITERATIONS,hash:'SHA-256'},material,{name:'AES-GCM',length:256},false,[usage]);
+    } finally {bytes.fill(0);}
+  }
+  function validatePassword(p) {
+    if (!p) throw new Error('请输入密码，或点击“生成强密码”。');
+  }
+  function parse(b) {
+    if(b.length<HEADER+16 || !isMagic(b)) throw new Error('这不是藏图 v1 加密文件，或文件已损坏。旧混淆工具的图片不兼容。');
+    const view=new DataView(b.buffer,b.byteOffset,b.byteLength), count=view.getUint32(8), len=view.getUint32(40);
+    if(count!==ITERATIONS) throw new Error('文件版本或加密参数不受支持。');
+    if(len<20 || len>MAX_CONTAINER-HEADER || b.length!==HEADER+len) throw new Error('加密文件不完整、已损坏或超出大小限制。');
+    return {header:b.subarray(0,HEADER),salt:b.subarray(12,28),iv:b.subarray(28,40),cipher:b.subarray(HEADER)};
+  }
+  async function encrypt(file,password) {
+    validatePassword(password);
+    if(!file.size || file.size>MAX) throw new Error('请选择不超过 20 MB 的非空图片。');
+    const meta=encoder.encode(JSON.stringify({name:safeName(file.name),type:String(file.type||'application/octet-stream').slice(0,128)}));
+    if(meta.length>2048) throw new Error('文件信息过长。');
+    const prefix=new Uint8Array(4);new DataView(prefix.buffer).setUint32(0,meta.length);
+    const original=new Uint8Array(await file.arrayBuffer()), plain=join(prefix,meta,original);
+    original.fill(0);
+    try {
+      const header=new Uint8Array(HEADER);header.set(MAGIC);
+      const v=new DataView(header.buffer);v.setUint32(8,ITERATIONS);
+      crypto.getRandomValues(header.subarray(12,28));crypto.getRandomValues(header.subarray(28,40));
+      v.setUint32(40,plain.length+16);
+      const key=await keyFor(password,header.subarray(12,28),'encrypt');
+      const encrypted=await crypto.subtle.encrypt({name:'AES-GCM',iv:header.subarray(28,40),additionalData:header,tagLength:128},key,plain);
+      return join(header,new Uint8Array(encrypted));
+    } finally {plain.fill(0);}
+  }
+  async function decrypt(bytes,password) {
+    if(!password) throw new Error('请输入加密时使用的密码。');
+    const p=parse(bytes), key=await keyFor(password,p.salt,'decrypt');
+    let plain;
+    try {plain=new Uint8Array(await crypto.subtle.decrypt({name:'AES-GCM',iv:p.iv,additionalData:p.header,tagLength:128},key,p.cipher));}
+    catch {throw new Error('无法解密：密码不正确，或文件已被修改、压缩或损坏。');}
+    try {
+      const n=new DataView(plain.buffer).getUint32(0);
+      if(n>2048 || n<2 || n+4>=plain.length) throw new Error('文件内部格式无效。');
+      const meta=JSON.parse(decoder.decode(plain.subarray(4,4+n)));
+      if(typeof meta.name!=='string' || typeof meta.type!=='string' || meta.type.length>128) throw new Error('文件信息无效。');
+      return {name:safeName(meta.name),type:meta.type,blob:new Blob([plain.subarray(4+n)],{type:meta.type})};
+    } finally {plain.fill(0);}
+  }
+  function randomPassword() {const chars='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_';return Array.from(crypto.getRandomValues(new Uint8Array(20)),b=>chars[b&63]).join('');}
+  async function toPNG(bytes) {
+    parse(bytes);
+    const pixels=Math.ceil(bytes.length/3),w=Math.min(2048,Math.max(32,Math.ceil(Math.sqrt(pixels)))),h=Math.ceil(pixels/w);
+    const c=document.createElement('canvas');c.width=w;c.height=h;
+    try {
+      const ctx=c.getContext('2d'),data=ctx.createImageData(w,h);
+      for(let p=0,j=0;p<data.data.length;p+=4){data.data[p]=bytes[j++]||0;data.data[p+1]=bytes[j++]||0;data.data[p+2]=bytes[j++]||0;data.data[p+3]=255;}
+      ctx.putImageData(data,0,0);
+      const blob=await new Promise((resolve,reject)=>c.toBlob(b=>b?resolve(b):reject(new Error('PNG 生成失败，请改用加密文件。')),'image/png'));
+      const verified=await fromPNG(blob);
+      if(!eq(bytes,verified)) throw new Error('此浏览器的 PNG 保存校验失败，请改用加密文件。');
+      return blob;
+    } finally {c.width=c.height=1;}
+  }
+  async function fromPNG(blob) {
+    const head=new Uint8Array(await blob.slice(0,24).arrayBuffer());
+    if(head.length<24 || !eq(head.subarray(0,8),pngMagic)) throw new Error('请选择原始加密 PNG 或 .ctvault 文件，不支持截图和 JPG。');
+    const v=new DataView(head.buffer),w=v.getUint32(16),h=v.getUint32(20);
+    if(!w||!h||w>8192||h>8192||w*h>8000000) throw new Error('图片尺寸异常或超过加密图片的大小限制。');
+    const url=URL.createObjectURL(blob),image=new Image(),canvas=document.createElement('canvas');
+    try {
+      await new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=()=>reject(new Error('PNG 文件无法读取。'));image.src=url;});
+      canvas.width=w;canvas.height=h;const ctx=canvas.getContext('2d',{willReadFrequently:true});ctx.drawImage(image,0,0);
+      const d=ctx.getImageData(0,0,w,h).data;
+      const prefix=new Uint8Array(HEADER);
+      for(let j=0;j<HEADER;j++)prefix[j]=d[Math.floor(j/3)*4+j%3];
+      if(!isMagic(prefix)) throw new Error('这张图片不是藏图加密 PNG，或已经被压缩、缩放。请索取原始文件。');
+      const n=HEADER+new DataView(prefix.buffer).getUint32(40);
+      if(n>MAX_CONTAINER||n<HEADER+20||n>w*h*3) throw new Error('加密 PNG 不完整或已损坏。');
+      const bytes=new Uint8Array(n);
+      for(let j=0;j<n;j++) {const p=Math.floor(j/3)*4;if(d[p+3]!==255)throw new Error('加密 PNG 的像素已被修改。');bytes[j]=d[p+j%3];}
+      parse(bytes);return bytes;
+    } finally {URL.revokeObjectURL(url);image.src='';canvas.width=canvas.height=1;}
+  }
+  async function readEncrypted(file) {
+    if(file.size>30*1024*1024) throw new Error('加密文件超过 30 MB，无法在此版本处理。');
+    const head=new Uint8Array(await file.slice(0,8).arrayBuffer());
+    if(isMagic(head)) {const b=new Uint8Array(await file.arrayBuffer());parse(b);return b;}
+    if(eq(head,pngMagic)) return fromPNG(file);
+    throw new Error('请选择藏图生成的 .ctvault 文件或原始加密 PNG。');
+  }
+  return Object.freeze({encrypt,decrypt,toPNG,fromPNG,readEncrypted,randomPassword,validatePassword,MAX,ITERATIONS});
+})();
+
+// Saving is explicitly initiated by a user click; file bytes never leave the browser.
+const FileSaving = (() => {
+ const retainedURLs=new Set();
+ function download(blob,name) {
+  const url=URL.createObjectURL(blob);retainedURLs.add(url);
+  const link=document.createElement('a');link.href=url;link.download=name;link.hidden=true;
+  document.body.append(link);link.click();link.remove();
+  // Do not revoke on pagehide: some browsers navigate to the download first.
+  setTimeout(()=>{URL.revokeObjectURL(url);retainedURLs.delete(url);},10*60*1000);
+ }
+ async function saveAs(blob,name) {
+  if(typeof window.showSaveFilePicker!=='function')throw new Error('此浏览器不支持“另存为”，请使用普通下载或系统保存。');
+  const handle=await window.showSaveFilePicker({suggestedName:name});
+  let writable;
+  try{writable=await handle.createWritable();await writable.write(blob);await writable.close();}
+  catch(e){try{await writable?.abort();}catch{}throw e;}
+ }
+ function canShare(blob,name) {
+  try{return !!navigator.share&&!!navigator.canShare&&navigator.canShare({files:[new File([blob],name,{type:blob.type||'application/octet-stream'})]});}catch{return false;}
+ }
+ async function share(blob,name) {
+  if(!canShare(blob,name))throw new Error('系统不支持保存这种文件，请使用普通下载或在系统浏览器打开。');
+  await navigator.share({files:[new File([blob],name,{type:blob.type||'application/octet-stream'})]});
+ }
+ return Object.freeze({download,saveAs,canShare,share});
+})();
+
+(() => {
+ 'use strict';
+ const pristine='<!doctype html>\n'+document.documentElement.outerHTML;
+ const $=id=>document.getElementById(id);
+ let mode='encrypt',selected=null,busy=false,previewURL=null,resultURL=null,resultFile=null;
+ const offlineFile=new Blob([pristine],{type:'text/html;charset=utf-8'}),offlineName='贝利亚粉丝团专用-离线版.html';
+ const raster=/^image\/(png|jpeg|gif|webp|bmp|avif)$/i;
+ const size=n=>n<1024*1024?`${(n/1024).toFixed(1)} KB`:`${(n/1024/1024).toFixed(2)} MB`;
+ function status(message,kind='') {$('status').textContent=message;$('status').className=kind;}
+ function releaseResult() {if(resultURL)URL.revokeObjectURL(resultURL);resultURL=null;resultFile=null;$('download').removeAttribute('href');$('open-image').removeAttribute('href');$('save-message').textContent='';$('result').hidden=true;}
+ function preview(blob,title='',caption='') {
+  if(previewURL)URL.revokeObjectURL(previewURL);previewURL=null;
+  $('preview-image').hidden=true;$('preview-image').removeAttribute('src');$('empty-preview').hidden=true;$('file-preview').hidden=true;
+  if(blob&&raster.test(blob.type)) {previewURL=URL.createObjectURL(blob);$('preview-image').src=previewURL;$('preview-image').hidden=false;}
+  else if(title) {$('file-preview-title').textContent=title;$('file-preview-caption').textContent=caption;$('file-preview').hidden=false;}
+  else $('empty-preview').hidden=false;
+ }
+ function wipe() {
+  selected=null;$('file').value='';$('file-name').textContent=mode==='encrypt'?'点击选择，或拖放图片到这里':'点击选择，或拖放加密文件到这里';$('file-size').textContent='';
+  $('password').value='';$('confirm').value='';$('password').type='password';$('confirm').type='password';$('show-password').textContent='显示';$('show-password').setAttribute('aria-pressed','false');$('show-password').setAttribute('aria-label','显示密码');
+  $('copy').disabled=true;$('saved-password').checked=false;$('password-hint').textContent='不要使用生日、手机号或常见短语';releaseResult();preview(null);$('preview-label').textContent='处理预览';status('准备好后，点击上方按钮。');
+ }
+ function changeMode(next) {
+  if(busy)return;mode=next;
+  for(const m of ['encrypt','decrypt']){$(m+'-tab').classList.toggle('active',m===mode);$(m+'-tab').setAttribute('aria-selected',String(m===mode));}
+  $('panel').setAttribute('aria-labelledby',mode+'-tab');$('encrypt-options').hidden=mode!=='encrypt';$('decrypt-help').hidden=mode!=='decrypt';
+  $('file').accept=mode==='encrypt'?'image/*':'.ctvault,.png';$('file-label').textContent=mode==='encrypt'?'选择一张图片':'选择加密文件';$('file-help').textContent=mode==='encrypt'?'JPG、PNG、GIF、WebP 等 · 最大 20 MB':'.ctvault 或原始加密 PNG · 不兼容旧混淆图片';
+  $('password-label').textContent=mode==='encrypt'?'设置解密密码':'输入解密密码';$('password').placeholder=mode==='encrypt'?'密码长度不限，建议生成强密码':'输入加密时使用的密码';$('password').autocomplete=mode==='encrypt'?'new-password':'off';
+  $('run').replaceChildren(document.createTextNode(mode==='encrypt'?'加密图片':'解密图片'),Object.assign(document.createElement('span'),{textContent:'→'}));wipe();
+ }
+ function choose(file) {
+  if(busy||!file)return;
+  releaseResult();selected=null;preview(null);$('file-name').textContent=mode==='encrypt'?'点击选择，或拖放图片到这里':'点击选择，或拖放加密文件到这里';$('file-size').textContent='';
+  if(mode==='encrypt'&&(!file.type.startsWith('image/')&&!/\.(png|jpe?g|gif|webp|bmp|avif|heic|heif|tiff?|svg)$/i.test(file.name))) {status('请选择图片文件。','error');return;}
+  if(file.size===0||file.size>(mode==='encrypt'?Vault.MAX:30*1024*1024)){status(mode==='encrypt'?'请选择不超过 20 MB 的非空图片。':'请选择不超过 30 MB 的非空加密文件。','error');return;}
+  selected=file;$('file-name').textContent=file.name;$('file-size').textContent=size(file.size);$('preview-label').textContent='已选择';
+  preview(mode==='encrypt'?file:null,mode==='encrypt'?'图片已就绪':'加密文件已就绪',mode==='encrypt'?'将保留原始文件，不改变画质。':'输入密码后才能查看内容。');status('文件已就绪。');
+ }
+ function setBusy(value) {
+  busy=value;$('panel').setAttribute('aria-busy',String(value));
+  for(const id of ['file','password','confirm','format','saved-password','run','generate','copy','show-password','clear','encrypt-tab','decrypt-tab'])$(id).disabled=value;
+  if(!value)$('copy').disabled=!$('password').value;
+ }
+ function invalidate() {if(!busy){releaseResult();$('saved-password').checked=false;}}
+ $('file').addEventListener('change',()=>choose($('file').files[0]));
+ for(const event of ['dragenter','dragover'])$('dropzone').addEventListener(event,e=>{e.preventDefault();if(!busy)$('dropzone').classList.add('over');});
+ for(const event of ['dragleave','drop'])$('dropzone').addEventListener(event,e=>{e.preventDefault();$('dropzone').classList.remove('over');if(event==='drop')choose(e.dataTransfer.files[0]);});
+ $('encrypt-tab').onclick=()=>changeMode('encrypt');$('decrypt-tab').onclick=()=>changeMode('decrypt');
+ for(const id of ['encrypt-tab','decrypt-tab'])$(id).addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();changeMode(mode==='encrypt'?'decrypt':'encrypt');$(mode+'-tab').focus();}});
+ $('clear').onclick=wipe;
+ $('show-password').onclick=()=>{const show=$('password').type==='password';$('password').type=$('confirm').type=show?'text':'password';$('show-password').textContent=show?'隐藏':'显示';$('show-password').setAttribute('aria-pressed',String(show));$('show-password').setAttribute('aria-label',show?'隐藏密码':'显示密码');};
+ $('password').addEventListener('input',()=>{invalidate();$('copy').disabled=!$('password').value;$('password-hint').textContent='长度不等于强度；随机生成的密码更难猜。';});
+ $('confirm').addEventListener('input',invalidate);
+ $('generate').onclick=()=>{invalidate();const p=Vault.randomPassword();$('password').value=$('confirm').value=p;$('copy').disabled=false;$('password-hint').textContent='已生成 20 位随机密码。请复制并妥善保存。';status('密码已生成；保存后勾选确认，再开始加密。');};
+ $('copy').onclick=async()=>{try{await navigator.clipboard.writeText($('password').value);status('密码已复制。请粘贴到你信任的位置保存。');}catch{$('password').type='text';$('show-password').textContent='隐藏';$('show-password').setAttribute('aria-pressed','true');$('show-password').setAttribute('aria-label','隐藏密码');$('password').focus();$('password').select();status('浏览器不允许自动复制，已选中密码，请手动复制。');}};
+ $('format').onchange=()=>{releaseResult();$('format-help').textContent=$('format').value==='png'?'生成噪点 PNG，体积可能增大。必须按文件发送，不能截图、缩放或压缩。':'体积接近原图。接收方打开本工具，选择“解密图片”即可恢复。';};
+ $('run').onclick=async()=>{
+  if(busy)return;releaseResult();
+  try {
+   if(!crypto.subtle)throw new Error('当前环境不支持加密，请用 Chrome、Edge 或 Safari 打开 HTTPS 网址或离线版。');
+   if(!selected)throw new Error(mode==='encrypt'?'请先选择图片。':'请先选择加密文件。');
+   const password=$('password').value;
+   if(mode==='encrypt') {Vault.validatePassword(password);if(password!==$('confirm').value)throw new Error('两次输入的密码不一致。');if(!$('saved-password').checked)throw new Error('请先保存好密码，并勾选确认。');}
+   setBusy(true);status(mode==='encrypt'?'正在加密，请稍候……':'正在验证密码并解密，请稍候……');
+   let blob,name;
+   if(mode==='encrypt') {
+    const packet=await Vault.encrypt(selected,password);
+    blob=$('format').value==='png'?await Vault.toPNG(packet):new Blob([packet],{type:'application/octet-stream'});
+    name='藏图-'+Array.from(packet.subarray(12,16),b=>b.toString(16).padStart(2,'0')).join('')+($('format').value==='png'?'.png':'.ctvault');
+    packet.fill(0);preview(blob,'图片已加密','原图及文件名已封装在密文中。');
+    $('result-title').textContent='加密完成';$('result-tip').textContent='请按文件发送，并妥善保管密码。下载后先试解密，再决定是否删除原图。';
+   } else {
+    const packet=await Vault.readEncrypted(selected);let restored;
+    try{restored=await Vault.decrypt(packet,password);}finally{packet.fill(0);}
+    blob=restored.blob;name=restored.name;preview(blob,'文件已恢复','原始内容已恢复，可以保存。');
+    $('result-title').textContent='解密完成';$('result-tip').textContent='恢复的是原始文件字节，包含原文件内的元数据。请保存到安全的位置。';
+   }
+   resultFile={blob,name};resultURL=URL.createObjectURL(blob);$('download').href=resultURL;$('download').download=name;$('result-detail').textContent=name+' · '+size(blob.size);$('result').hidden=false;$('preview-label').textContent='处理结果';
+   $('save-as').hidden=typeof window.showSaveFilePicker!=='function';$('share-file').hidden=!FileSaving.canShare(blob,name);$('open-image').hidden=!raster.test(blob.type);if(raster.test(blob.type))$('open-image').href=resultURL;
+   status('完成。请点击“保存结果”下载文件。','success');
+   if(mode==='decrypt'){$('password').value='';$('confirm').value='';}
+  } catch(e){status(e.message||'处理失败，请重新选择文件后再试。','error');}
+  finally{setBusy(false);}
+ };
+ function saveMessage(text){$('save-message').textContent=text;}
+ const downloadHelp='已请求浏览器下载。若没有出现文件，请尝试下方的保存方式；在微信内请从右上角菜单选择“在浏览器打开”。';
+ $('download').onclick=e=>{e.preventDefault();if(!resultFile)return;FileSaving.download(resultFile.blob,resultFile.name);saveMessage(downloadHelp);};
+ $('save-as').onclick=async()=>{if(!resultFile)return;const file=resultFile;try{await FileSaving.saveAs(file.blob,file.name);saveMessage('文件已保存到你选择的位置。');}catch(e){saveMessage(e.name==='AbortError'?'已取消保存，文件仍在页面中，可以重试。':'另存为失败：'+(e.message||'请改用普通下载。'));}};
+ $('share-file').onclick=async()=>{if(!resultFile)return;const file=resultFile;try{await FileSaving.share(file.blob,file.name);saveMessage('已交给系统处理，请在你选择的位置确认文件。');}catch(e){saveMessage(e.name==='AbortError'?'已取消系统保存，文件仍在页面中。':'系统保存未完成：'+(e.message||'请改用普通下载。'));}};
+ $('open-image').onclick=()=>saveMessage('新页面会打开原始图片。请使用浏览器的文件保存功能；加密 PNG 不要截图或通过可能压缩图片的相册转存。');
+ $('offline-save-as').hidden=typeof window.showSaveFilePicker!=='function';
+ $('offline-direct').hidden=!/^https?:$/.test(location.protocol);
+ $('offline').onclick=()=>{$('offline-help').hidden=false;FileSaving.download(offlineFile,offlineName);$('offline-message').textContent=downloadHelp;};
+ $('offline-save-as').onclick=async()=>{try{await FileSaving.saveAs(offlineFile,offlineName);$('offline-message').textContent='离线版已保存到你选择的位置。';}catch(e){$('offline-message').textContent=e.name==='AbortError'?'已取消保存，可以重试。':'另存为未完成，请点击“直接下载离线文件”。';}};
+ if(/MicroMessenger/i.test(navigator.userAgent))$('browser-help').hidden=false;
+ // Returning from the system save sheet must not invalidate the pending file.
+ // URL cleanup happens on explicit clear/replacement; real document destruction also releases blobs.
+ window.addEventListener('pagehide',()=>{$('password').value='';$('confirm').value='';});
+ window.addEventListener('pageshow',e=>{if(e.persisted){$('password').value='';$('confirm').value='';$('copy').disabled=true;}});
+ if(!crypto.subtle)status('当前环境不支持加密，请用系统浏览器打开 HTTPS 网址或离线版。','error');
+})();
+</script></body></html>
